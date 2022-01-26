@@ -60,5 +60,5 @@ code {
 }
 
 .rw:hover {
-  background: rgb(182, 149, 149);
+  opacity: 0.7;
 }
