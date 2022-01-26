@@ -6,8 +6,16 @@ const Todo = ({ todo, index, remove }) => {
   };
 
   return (
-    <div className="todo" onClick={removeHandler}>
-      {todo.text} (-)
+    <div>
+      <div className="todo">
+        {todo.text}
+        <button
+          type="button"
+          className="btn-close"
+          aria-label="Close"
+          onClick={removeHandler}
+        ></button>
+      </div>
     </div>
   );
 };

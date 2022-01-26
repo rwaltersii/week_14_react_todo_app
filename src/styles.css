@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: "Arial";
+  font-family: "Courier New", Courier, monospace;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -10,7 +10,7 @@ code {
 }
 
 .app {
-  background: #209cee;
+  background: darkgrey;
   padding: 30px;
   height: 100vh;
 }
@@ -19,7 +19,8 @@ code {
   background: #e8e8e8;
   border-radius: 4px;
   padding: 5px;
-  max-width: 400px;
+  max-width: 600px;
+  margin: auto;
 }
 
 .todo {
@@ -32,11 +33,12 @@ code {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  cursor: pointer;
+  color: #a31f34;
+  border-radius: 4px;
 }
 
 .input {
-  width: 100%;
+  width: 80%;
   box-sizing: border-box;
   border: 0;
   border-radius: 4px;
@@ -44,4 +46,19 @@ code {
   padding: 1rem;
   height: 2.25em;
   font-size: 24px;
+  padding: 3px 10px;
+}
+
+.rw {
+  color: white;
+  background: #a31f34;
+  border: none;
+  height: 2.25em;
+  font-size: 24px;
+  width: 20%;
+  align-content: center;
+}
+
+.rw:hover {
+  background: rgb(182, 149, 149);
 }

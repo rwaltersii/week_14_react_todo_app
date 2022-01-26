@@ -15,15 +15,20 @@ const Form = ({ addTodo }) => {
   };
 
   return (
-    <form onSubmit={onSubmitHandler}>
-      <input
-        type="text"
-        className="input"
-        value={value}
-        placeholder="Add todo..."
-        onChange={onChangeHandler}
-      />
-    </form>
+    <div>
+      <form onSubmit={onSubmitHandler}>
+        <div>
+          <input
+            type="text"
+            className="input"
+            value={value}
+            placeholder="Enter new todo..."
+            onChange={onChangeHandler}
+          />
+          <button className="rw">Add</button>
+        </div>
+      </form>
+    </div>
   );
 };
 
